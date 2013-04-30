@@ -23,8 +23,6 @@ if [ "$selectedapp" == "" ]; then
 	exit 0
 else
 	/usr/bin/xattr -d com.apple.quarantine $selectedapp
-	echo "open app for user"
-	/usr/bin/open $selectedapp
 	echo "tell user app is ready to go"
 	$CD bubble --timeout 30 --title "Unidentified Warning Removed" --text "You would no long receive the warning prompt for this app."
 	
