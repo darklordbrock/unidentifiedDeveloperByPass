@@ -15,7 +15,7 @@ CDI="/Applications/Utilities/CocoaDialog.app/Contents/Resources"
 
 echo "Tell user want to selet"
 echo "user selects the app"
-selectedapp=`$CD fileselect --title "Remove Unidentified Developer Dialog" --text "Choose Application you want to remove Unidentified Developer message" --with-extensions .app`
+selectedapp=`$CD fileselect --title "Remove Unidentified Developer Dialog" --text "Choose Application you want to remove Unidentified Developer message" --with-extensions .app .jnlp .pkg .wdgt`
 
 echo $selectedapp
 if [ "$selectedapp" == "" ]; then
